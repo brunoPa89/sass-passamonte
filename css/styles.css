@@ -1,0 +1,159 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* color de fondo */
+body {
+  background-image: linear-gradient(to top, #f9d8df, #e099a5); }
+
+/* ESTILOS HEADER */
+.container .row .titulo-principal {
+  background-image: linear-gradient(to top, #f9d8df, #e099a5);
+  font-size: 30px;
+  font-family: "Arimo", sans-serif;
+  padding: 1.3rem;
+  text-align: center;
+  width: 100%; }
+
+.container .row nav ul {
+  background-image: linear-gradient(to top, #e992c3, #8c6b7f);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto; }
+  .container .row nav ul li {
+    background-color: #d0a8ae;
+    display: inline;
+    margin: 10px 40px;
+    padding: 10px;
+    box-shadow: 1px 1px black;
+    border-radius: 10px; }
+    .container .row nav ul li a {
+      font-family: "Arimo", sans-serif;
+      font-size: 22px;
+      text-decoration: none; }
+
+/* subtitulos */
+h2, h3 {
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  margin-top: 1rem; }
+
+/* ESTILOS MAIN INDEX */
+.contenedorMain {
+  width: 90%;
+  margin: 0 auto; }
+  .contenedorMain .contenidoMain {
+    display: flex;
+    flex-direction: column; }
+    .contenedorMain .contenidoMain p {
+      justify-content: left;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 22px;
+      font-family: "Arimo", sans-serif; }
+    .contenedorMain .contenidoMain .textoMain p {
+      margin: 25px 0 20 0;
+      font-size: 20px;
+      font-family: "Arimo", sans-serif;
+      text-align: left;
+      line-height: 1.5; }
+    .contenedorMain .contenidoMain .titulo-general {
+      font-size: 30px;
+      border: solid 1px black;
+      margin-top: 50px;
+      margin-bottom: 50px; }
+
+/*INDEX SECTION */
+.contenedorInfo {
+  width: 90%;
+  margin: 0 auto; }
+  .contenedorInfo .introduccionImg .imgInfo {
+    width: 90%;
+    margin: 1.5rem 0 1.5rem 0; }
+  .contenedorInfo .introduccionTexto p {
+    font-family: "Arimo", sans-serif; }
+  .contenedorInfo .introduccionImg2 .imgInfo {
+    width: 90%;
+    margin-bottom: 1.5rem; }
+
+/*BOTON DE WSP */
+.contenedor-btn {
+  background-color: #2e6329;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite; }
+  .contenedor-btn .contenedor-btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s; }
+  .contenedor-btn a .boton {
+    width: 50px;
+    transition: ease 1s; }
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85); }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0); } }
+
+/*ESTILO FOOTER */
+footer h2 {
+  background-color: #d4a4ab;
+  font-size: 1rem;
+  text-align: center; }
+
+/*QUERY PARA TABLET*/
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .container .row .titulo-principal {
+    font-size: 40px; }
+  .contenedorMain .contenidoMain .textoMain p {
+    font-size: 22px; }
+  .contenedorInfo .introduccionTexto p {
+    font-size: 22px; } }
+
+/*QUERY PARA DESKTOP*/
+/* GENERALES */
+@media screen and (min-width: 992px) {
+  .container {
+    position: sticky; }
+    .container .row .titulo-principal {
+      font-size: 60px; }
+    .container .row .nav-desk {
+      display: block; }
+      .container .row .nav-desk div ul {
+        flex-direction: row;
+        justify-content: space-evenly; }
+        .container .row .nav-desk div ul li:hover {
+          background-color: #f5a3b0;
+          transform: scale(0.9);
+          box-shadow: 1px 1px 5px violet;
+          border-radius: 10px; }
+  /* INDEX */
+  .contenedorMain .contenidoMain p {
+    font-size: 30px; }
+  .contenedorMain .contenidoMain .textoMain p {
+    font-size: 27px; }
+  .contenedorMain .contenidoMain .titulo-general {
+    font-size: 35px; }
+  .contenedorInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 15px;
+    margin-top: 50px;
+    text-align: center; }
+    .contenedorInfo .introduccionImg2 {
+      grid-area: 2 / 2 / 2 / 2; }
+    .contenedorInfo .introduccionTexto {
+      display: flex;
+      align-items: center;
+      font-size: 25px; }
+    .contenedorInfo .imgInfo {
+      width: 80%; } }
