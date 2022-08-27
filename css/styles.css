@@ -64,7 +64,9 @@ h2, h3 {
       font-size: 30px;
       border: solid 1px black;
       margin-top: 50px;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      font-family: "Arimo", sans-serif;
+      background-color: #dcb3ba; }
 
 /*INDEX SECTION */
 .contenedorInfo {
@@ -78,6 +80,167 @@ h2, h3 {
   .contenedorInfo .introduccionImg2 .imgInfo {
     width: 90%;
     margin-bottom: 1.5rem; }
+
+/* PAGINA PILATES */
+.contenedorPilates {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* video*/ }
+  .contenedorPilates .imgPilates {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image-width: auto; }
+  .contenedorPilates .textoPilates {
+    text-align: center;
+    /*preguntas y respuestas */ }
+    .contenedorPilates .textoPilates .pregunta h3 {
+      font-size: 19px;
+      font-weight: bold;
+      margin: 25px 0 5px 0;
+      text-transform: uppercase;
+      background-color: rgba(164, 170, 219, 0.866);
+      padding: 10px; }
+    .contenedorPilates .textoPilates .pregunta h4 {
+      font-size: 19px;
+      font-weight: bold;
+      margin: 25px 0 5px 0;
+      text-transform: uppercase;
+      background-color: rgba(164, 170, 219, 0.866);
+      padding: 10px; }
+    .contenedorPilates .textoPilates .pregunta p {
+      font-size: 18px;
+      line-height: 1.2; }
+  .contenedorPilates .videoPilates .videoUno {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem; }
+
+/* PAGINA ELONGACION */
+.contenedor-grid .section-uno {
+  display: flex;
+  margin: 0 auto; }
+  .contenedor-grid .section-uno .imgElongacion {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem; }
+
+.contenedor-grid .section-dos {
+  display: flex;
+  margin: 0 auto; }
+  .contenedor-grid .section-dos .imgElongacion {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem; }
+
+.contenedor-grid .section-tres {
+  display: flex;
+  margin: 5px;
+  flex-direction: column; }
+  .contenedor-grid .section-tres .texto-elongacion {
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Arimo", sans-serif; }
+
+/* PAGINA YOGA */
+.contenedorMain {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.contenedorMain iframe {
+  width: 100%; }
+
+.contenedorMain .subtitulo-yoga {
+  font-family: "Arimo", sans-serif;
+  background-color: #cba2cb;
+  text-align: center;
+  margin: 1.5rem; }
+
+/* PAGINA CLASES */
+.contenedorMain .img-clases {
+  display: flex;
+  width: 100%;
+  margin: 0 auto; }
+
+.sectionClases {
+  margin: 1.3rem; }
+  .sectionClases p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: "Arimo", sans-serif; }
+
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin: 3rem 0.5rem;
+  justify-content: center; }
+  .tarjetas .card .tamanio .card-title {
+    font-size: 19px;
+    background-color: #d4a4ab; }
+  .tarjetas .bg-tarjeta {
+    background-color: #f8f4f5;
+    font-family: "Arimo", sans-serif; }
+
+/* PAGINA CONTACTO */
+form {
+  margin: 0 auto;
+  width: 450px;
+  background-color: #bda3bd;
+  padding: 2px;
+  border-style: double;
+  font-size: 20px; }
+  form fieldset input, form fieldset label, form fieldset textarea {
+    padding: 0.3rem;
+    margin: 0.2rem; }
+
+/*redes */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.4fr;
+  grid-template-rows: 0.3fr 0.5fr 1.5fr 0.3fr 0.5fr 0.2fr;
+  grid-template-areas: "header header header" "main main main" "form form form" "buscanos buscanos buscanos" "instagram facebook tiktok" "footer footer footer"; }
+  .contacto-grid .img-redes {
+    display: flex;
+    width: 35%;
+    margin: 0 auto; }
+  .contacto-grid h3 {
+    background-color: rgba(164, 170, 219, 0.866);
+    font-family: "Arimo", sans-serif;
+    margin: 2rem 1rem; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+form {
+  grid-area: form; }
+
+h3 {
+  grid-area: buscanos; }
+
+.instagram {
+  grid-area: instagram; }
+
+.facebook {
+  grid-area: facebook; }
+
+.tiktok {
+  grid-area: tiktok; }
+
+footer {
+  grid-area: footer; }
 
 /*BOTON DE WSP */
 .contenedor-btn {
@@ -116,7 +279,15 @@ footer h2 {
   .contenedorMain .contenidoMain .textoMain p {
     font-size: 22px; }
   .contenedorInfo .introduccionTexto p {
-    font-size: 22px; } }
+    font-size: 22px; }
+  /* PAGINA ELONGACION */
+  .section-tres .texto-elongacion {
+    font-size: 20px; } }
+
+/* PAGINA CLASES */
+.sectionClases p {
+  font-size: 1.5rem;
+  margin-bottom: 5rem; }
 
 /*QUERY PARA DESKTOP*/
 /* GENERALES */
@@ -156,4 +327,75 @@ footer h2 {
       align-items: center;
       font-size: 25px; }
     .contenedorInfo .imgInfo {
-      width: 80%; } }
+      width: 80%; }
+  /* PILATES */
+  .contenedorPilates div .imgPilates {
+    width: 80%;
+    height: 800px;
+    margin: 0 auto; }
+  .contenedorPilates .textoPilates {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px; }
+    .contenedorPilates .textoPilates .pregunta {
+      border: 2px dotted blue;
+      margin: 15px; }
+      .contenedorPilates .textoPilates .pregunta h4 {
+        margin: 0px;
+        padding: 10px; }
+  .contenedorPilates .videoPilates .videoUno {
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 25px; }
+  /* ELONGACION */
+  .contenedor-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.3fr 0.5fr 1fr 1fr 0.2fr;
+    grid-template-areas: "header header" "main main" "section-uno section-dos" "section-tres section-tres" "footer footer"; }
+    .contenedor-grid .section-tres .texto-elongacion {
+      font-size: 25px; }
+  header {
+    grid-area: header; }
+  main {
+    grid-area: main; }
+  .section-uno {
+    grid-area: section-uno; }
+  .section-dos {
+    grid-area: section-dos; }
+  .section-tres {
+    grid-area: section-tres; }
+  footer {
+    grid-area: footer; }
+  /* CLASES */
+  .sectionClases p {
+    font-size: 1.8rem;
+    margin-bottom: 5rem; }
+  .contenedorMain .img-clases {
+    display: flex;
+    width: 70%;
+    margin: 0 auto; }
+  .contenedorMain .container-fluid {
+    display: flex;
+    align-content: center; }
+  /*animacion tarjetas */
+  .tarjetas .card:hover {
+    transform: scale(1.2); }
+  /*YOGA */
+  .contenedorMain p {
+    font-size: 25px; }
+  .contenedorMain h3 {
+    font-size: 30px; }
+  /* CONTACTO */
+  .contacto-grid .instagram {
+    display: flex;
+    justify-content: flex-end; }
+  .contacto-grid .facebook {
+    display: flex;
+    justify-content: center; }
+  .contacto-grid .tiktok {
+    display: flex;
+    justify-content: flex-start; } }
