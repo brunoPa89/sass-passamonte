@@ -10,7 +10,7 @@
 
 /* color de fondo */
 body {
-  background-image: linear-gradient(to top, #f9d8df, #e099a5); }
+  background-color: #F4BFBF; }
 
 /* ESTILOS HEADER */
 .container .row .titulo-principal {
@@ -50,8 +50,8 @@ h2, h3 {
   .contenedorMain .contenidoMain {
     display: flex;
     flex-direction: column; }
-    .contenedorMain .contenidoMain p {
-      justify-content: left;
+    .contenedorMain .contenidoMain .nombre-profe {
+      text-align: left;
       margin-top: 15px;
       margin-bottom: 15px;
       font-size: 22px;
@@ -68,7 +68,7 @@ h2, h3 {
       margin-top: 50px;
       margin-bottom: 50px;
       font-family: "Arimo", sans-serif;
-      background-color: #dcb3ba; }
+      background-color: #cba2cb; }
 
 /*INDEX SECTION */
 .contenedorMain .contenidoMain .textoMain p {
@@ -106,14 +106,14 @@ h2, h3 {
       font-weight: bold;
       margin: 25px 0 5px 0;
       text-transform: uppercase;
-      background-color: rgba(164, 170, 219, 0.866);
+      background-color: #8CC0DE;
       padding: 10px; }
     .contenedorPilates .textoPilates .pregunta h4 {
       font-size: 19px;
       font-weight: bold;
       margin: 25px 0 5px 0;
       text-transform: uppercase;
-      background-color: rgba(164, 170, 219, 0.866);
+      background-color: #8CC0DE;
       padding: 10px; }
     .contenedorPilates .textoPilates .pregunta p {
       font-size: 18px;
@@ -159,7 +159,7 @@ h2, h3 {
 
 .contenedorMain .subtitulo-yoga {
   font-family: "Arimo", sans-serif;
-  background-color: #cba2cb;
+  background-color: #8CC0DE;
   text-align: center;
   margin: 1.5rem; }
 
@@ -184,9 +184,9 @@ h2, h3 {
   justify-content: center; }
   .tarjetas .card .tamanio .card-title {
     font-size: 19px;
-    background-color: #d4a4ab; }
+    background-color: #F4BFBF; }
   .tarjetas .bg-tarjeta {
-    background-color: #f8f4f5;
+    background-color: #FFD9C0;
     font-family: "Arimo", sans-serif; }
 
 /* PAGINA CONTACTO */
@@ -210,7 +210,7 @@ form {
   .contacto-grid .img-redes {
     width: 35%; }
   .contacto-grid h3 {
-    background-color: rgba(164, 170, 219, 0.866);
+    background-color: #8CC0DE;
     font-family: "Arimo", sans-serif;
     margin: 2rem 1rem; }
 
@@ -264,7 +264,7 @@ footer {
 
 /*ESTILO FOOTER */
 footer h2 {
-  background-color: #d4a4ab;
+  background-color: #cba2cb;
   font-size: 1rem;
   text-align: center; }
 
@@ -303,7 +303,7 @@ footer h2 {
           box-shadow: 1px 1px 5px violet;
           border-radius: 10px; }
   /* INDEX */
-  .contenedorMain .contenidoMain p {
+  .contenedorMain .contenidoMain .nombre-profe {
     font-size: 30px; }
   .contenedorMain .contenidoMain .textoMain p {
     font-size: 27px; }
@@ -367,8 +367,8 @@ footer h2 {
   footer {
     grid-area: footer; }
   /* CLASES */
-  .sectionClases p {
-    font-size: 1.8rem;
+  .sectionClases .p-clases {
+    font-size: 1.3rem;
     margin-bottom: 5rem; }
   .contenedorMain .img-clases {
     display: flex;

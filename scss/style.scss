@@ -11,7 +11,7 @@
 
 /* color de fondo */
 body {
-    background-image: $color-body;
+    background-color: nth($colores, 2);
 }
 
 /* ESTILOS HEADER */
@@ -64,8 +64,8 @@ h2, h3 {
     .contenidoMain{
         display: flex;
         flex-direction: column;
-        p{
-            justify-content: left;
+        .nombre-profe{
+            text-align: left;
             margin-top: 15px;
             margin-bottom: 15px;
             font-size: 22px;
@@ -86,7 +86,7 @@ h2, h3 {
             margin-top: 50px;
             margin-bottom: 50px;
             font-family: $letra-ppal;
-            background-color: rgb(220, 179, 186);
+            background-color: nth($colores, 5);
         }
     }
 }
@@ -146,7 +146,7 @@ h2, h3 {
                 font-weight: bold;
                 margin: 25px 0 5px 0;
                 text-transform: uppercase;
-                background-color: $color-preguntas;
+                background-color: nth($colores, 3);
                 padding: 10px;
             }
             h4{
@@ -154,7 +154,7 @@ h2, h3 {
                 font-weight: bold;
                 margin: 25px 0 5px 0;
                 text-transform: uppercase;
-                background-color: $color-preguntas;
+                background-color: nth($colores, 3);
                 padding: 10px;
             }
             p{
@@ -217,7 +217,7 @@ h2, h3 {
       width: $width-general +10; }
     .contenedorMain .subtitulo-yoga {
         font-family: $letra-ppal;
-        background-color: $color-sub-yoga;
+        background-color: nth($colores, 3);
         text-align: center;
         margin: 1.5rem; }
 
@@ -247,12 +247,12 @@ h2, h3 {
         .tamanio{
             .card-title{
                 font-size: 19px;
-                background-color: $color-footer;
+                background-color: nth($colores, 2);
             }
         }
     }
     .bg-tarjeta{
-        background-color: $color-tarjeta;
+        background-color: nth($colores, 4);
         font-family: $letra-ppal;
     }
 }
@@ -291,7 +291,7 @@ form {
         width: 35%;
     }
     h3{
-        background-color: $color-preguntas;
+        background-color: nth($colores, 3);
         font-family: $letra-ppal;
         margin: 2rem 1rem;
     }
@@ -325,7 +325,7 @@ footer{
 
 /*BOTON DE WSP */
 .contenedor-btn{
-    background-color: $color-btn;
+    background-color: nth($colores, 1);
     border: 1px solid #fff;
     position: fixed;
     z-index: 999;
@@ -359,7 +359,7 @@ footer{
 /*ESTILO FOOTER */
 footer{
     h2{
-        background-color: $color-footer;
+        background-color: nth($colores, 5);
         font-size: 1rem;
         text-align: center;
     }
@@ -437,7 +437,7 @@ footer{
     /* INDEX */
     .contenedorMain{
         .contenidoMain{
-            p{
+            .nombre-profe{
                 font-size: 30px;
             }
             .textoMain{
@@ -543,8 +543,8 @@ footer{
 
     /* CLASES */ 
     .sectionClases{
-        p{
-            font-size: 1.8rem;
+        .p-clases{
+            font-size: 1.3rem;
             margin-bottom: 5rem;
         }
     }
