@@ -1,11 +1,12 @@
-//variables
-@import "utilities/variables";
+//importaciones
+@import "base/variables";
+@import "base/listas";
+@import "base/mixin";
+@import "base/extend";
 
 /* reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    @include reset;
 }
 
 /* color de fondo */
@@ -22,15 +23,14 @@ body {
             font-family: $letra-ppal;
             padding: 1.3rem;
             text-align: center;
-            width: 100% ;
+            width: $width-general +10;
         }
         nav{
             ul{
                 background-image: $color-ul;
-                display: flex;
+                @extend %flex;
                 flex-direction: column;
                 justify-content: space-around;
-                margin: 0 auto;
                 li{
                     background-color: $color-li;
                     display: inline;
@@ -92,6 +92,16 @@ h2, h3 {
 }
 
 /*INDEX SECTION */
+.contenedorMain{
+    .contenidoMain{
+        .textoMain{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
 .contenedorInfo{
     width: $width-general;
     margin: 0 auto;
@@ -117,12 +127,11 @@ h2, h3 {
 /* PAGINA PILATES */
 .contenedorPilates{
     width: $width-general;
-    margin: 0 auto;
-    display: flex;
+    @extend %flex;
     flex-direction: column;
     justify-content: center;
     .imgPilates{
-        width: 100%;
+        width: $width-general +10;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -157,7 +166,7 @@ h2, h3 {
     /* video*/
     .videoPilates{
         .videoUno{
-            width: 100%;
+            width: $width-general +10;
             height: 350px;
             display: flex;
             justify-content: center;
@@ -170,9 +179,8 @@ h2, h3 {
 /* PAGINA ELONGACION */
 .contenedor-grid{
     .section-uno{
-        display: flex;
-        margin: 0 auto;
-                .imgElongacion{
+        @extend %flex;
+        .imgElongacion{
             width: $width-general;
             margin: 0 auto; 
             margin-bottom: 3rem;
@@ -202,11 +210,11 @@ h2, h3 {
 
 /* PAGINA YOGA */
 .contenedorMain {
-    display: flex;
+    @extend %flex;
     flex-direction: column;
-    margin: 0 auto; }
+    }
     .contenedorMain iframe {
-      width: 100%; }
+      width: $width-general +10; }
     .contenedorMain .subtitulo-yoga {
         font-family: $letra-ppal;
         background-color: $color-sub-yoga;
@@ -217,14 +225,14 @@ h2, h3 {
 .contenedorMain{
     .img-clases{
         display: flex;
-        width: 100%;
+        width: $width-general +10;
         margin: 0 auto;    
     }
 }
 .sectionClases{
     margin: 1.3rem;
-    p{
-        font-size: 1.3rem;
+    .p-clases{
+        font-size: 1rem;
         text-align: center;
         font-family:$letra-ppal;
     }
@@ -232,7 +240,7 @@ h2, h3 {
 .tarjetas{
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 2.5rem;
     margin: 3rem 0.5rem;
     justify-content: center;
     .card{
@@ -279,9 +287,8 @@ form {
     "footer footer footer";
 
     .img-redes{
-        display: flex;
+        @extend %flex;
         width: 35%;
-        margin: 0 auto;
     }
     h3{
         background-color: $color-preguntas;
@@ -466,7 +473,7 @@ footer{
     .contenedorPilates{
         div{
             .imgPilates{
-                width: 80%;
+                width: 70%;
                 height: 800px;
                 margin: 0 auto;
             }
