@@ -52,9 +52,7 @@ body {
 /* subtitulos */
 
 h2, h3 {
-    font-family: $letra-ppal;
-    text-align: center;
-    margin-top: 1rem;
+    @extend %subtitulos;
 }
 
 /* ESTILOS MAIN INDEX */
@@ -261,7 +259,7 @@ h2, h3 {
 form {
     margin: 0 auto;
     width: 450px;
-    background-color: $color-form;
+    background-color: nth($colores, 5);
     padding: 2px;
     border-style: double;
     font-size: 20px;

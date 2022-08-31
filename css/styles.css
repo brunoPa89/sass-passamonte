@@ -2,6 +2,11 @@
   display: flex;
   margin: 0 auto; }
 
+h2, h3 {
+  font-family: "Arimo", sans-serif;
+  margin-top: 1rem;
+  text-align: center; }
+
 /* reset */
 * {
   margin: 0;
@@ -38,11 +43,6 @@ body {
       text-decoration: none; }
 
 /* subtitulos */
-h2, h3 {
-  font-family: "Arimo", sans-serif;
-  text-align: center;
-  margin-top: 1rem; }
-
 /* ESTILOS MAIN INDEX */
 .contenedorMain {
   width: 90%;
@@ -193,7 +193,7 @@ h2, h3 {
 form {
   margin: 0 auto;
   width: 450px;
-  background-color: #bda3bd;
+  background-color: #cba2cb;
   padding: 2px;
   border-style: double;
   font-size: 20px; }
