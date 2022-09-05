@@ -137,7 +137,7 @@ h2, h3 {
     }
     .textoPilates{
         text-align: center;
-        /*preguntas y respuestas */
+            /*preguntas y respuestas */
         .pregunta{
             h3{
                 font-size: 19px;
@@ -261,12 +261,15 @@ form {
     width: 450px;
     background-color: nth($colores, 5);
     padding: 2px;
-    border-style: double;
+    border: 2px solid black;
+    border-radius: 5px;
     font-size: 20px;
+    
     fieldset{
         input, label, textarea{
             padding: 0.3rem;
             margin: 0.2rem;
+            border-radius: 5px;
         }
     }
 }
@@ -577,6 +580,10 @@ footer{
         }
 
     /* CONTACTO */ 
+    form {
+        width: 550px; 
+    }
+
 .contacto-grid{
     .instagram{
         display: flex;

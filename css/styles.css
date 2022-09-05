@@ -195,11 +195,13 @@ form {
   width: 450px;
   background-color: #cba2cb;
   padding: 2px;
-  border-style: double;
+  border: 2px solid black;
+  border-radius: 5px;
   font-size: 20px; }
   form fieldset input, form fieldset label, form fieldset textarea {
     padding: 0.3rem;
-    margin: 0.2rem; }
+    margin: 0.2rem;
+    border-radius: 5px; }
 
 /*redes */
 .contacto-grid {
@@ -386,6 +388,8 @@ footer h2 {
   .contenedorMain h3 {
     font-size: 30px; }
   /* CONTACTO */
+  form {
+    width: 550px; }
   .contacto-grid .instagram {
     display: flex;
     justify-content: flex-end; }
