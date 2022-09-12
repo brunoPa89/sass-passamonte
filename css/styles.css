@@ -77,14 +77,20 @@ body {
 .contenedorInfo {
   width: 90%;
   margin: 0 auto; }
-  .contenedorInfo .introduccionImg .imgInfo {
-    width: 90%;
-    margin: 1.5rem 0 1.5rem 0; }
+  .contenedorInfo .introduccionImg {
+    display: flex; }
+    .contenedorInfo .introduccionImg .imgInfo {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem; }
   .contenedorInfo .introduccionTexto p {
     font-family: "Arimo", sans-serif; }
-  .contenedorInfo .introduccionImg2 .imgInfo {
-    width: 90%;
-    margin-bottom: 1.5rem; }
+  .contenedorInfo .introduccionImg2 {
+    display: flex; }
+    .contenedorInfo .introduccionImg2 .imgInfo {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem; }
 
 /* PAGINA PILATES */
 .contenedorPilates {
@@ -280,7 +286,10 @@ footer h2 {
     font-size: 22px; }
   /* PAGINA ELONGACION */
   .section-tres .texto-elongacion {
-    font-size: 20px; } }
+    font-size: 20px; }
+  /* PAGINA CONTACTO */
+  .contacto-grid .img-redes {
+    width: 20%; } }
 
 /* PAGINA CLASES */
 .sectionClases p {

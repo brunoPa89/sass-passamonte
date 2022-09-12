@@ -104,9 +104,11 @@ h2, h3 {
     width: $width-general;
     margin: 0 auto;
     .introduccionImg{
+        display: flex;
         .imgInfo{
             width: $width-general;
-            margin: 1.5rem 0 1.5rem 0;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
         }    
     }
     .introduccionTexto{
@@ -115,8 +117,10 @@ h2, h3 {
         }
     }
     .introduccionImg2{
+        display: flex;
         .imgInfo{
             width: $width-general;
+            margin: 0 auto;
             margin-bottom: 1.5rem;
         }
     }
@@ -397,7 +401,13 @@ footer{
             font-size: $font-size-tablet;
             }
         }  
+/* PAGINA CONTACTO */
+.contacto-grid{
+    .img-redes{
+        width: 20%;
+        }
     }
+}
 
 /* PAGINA CLASES */
 .sectionClases{
@@ -599,9 +609,6 @@ footer{
     }
   
 }
-
-
-    
 }
 
 
